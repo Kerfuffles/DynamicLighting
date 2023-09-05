@@ -225,7 +225,7 @@ namespace AlpacaIT.DynamicLighting
             lightmapSizeMin1 = lightmapSize - 1;
 
 #if UNITY_EDITOR
-            var progressTitle = "Raytracing Scene " + meshBuilder.surfaceArea.ToString("0.00") + "m² (" + lightmapSize + "x" + lightmapSize + ")";
+            var progressTitle = "Raytracing Scene " + meshBuilder.surfaceArea.ToString("0.00") + "m\u00b2 (" + lightmapSize + "x" + lightmapSize + ")";
             var progressDescription = "Raytracing " + meshFilter.name;
             if (meshBuilder.meshUv1.Length == 0)
             {
@@ -238,7 +238,7 @@ namespace AlpacaIT.DynamicLighting
                 long vramLightmap = lightmapSize * lightmapSize * 4; // uint32
                 vramTotal += vramLightmap;
 
-                Debug.Log(meshFilter.name + " surface area: " + meshBuilder.surfaceArea.ToString("0.00") + "m² lightmap size: " + lightmapSize + "x" + lightmapSize + " VRAM: " + BytesToUnitString(vramLightmap), meshFilter);
+                Debug.Log(meshFilter.name + " surface area: " + meshBuilder.surfaceArea.ToString("0.00") + "m\u00b2 lightmap size: " + lightmapSize + "x" + lightmapSize + " VRAM: " + BytesToUnitString(vramLightmap), meshFilter);
             }
 #endif
 
