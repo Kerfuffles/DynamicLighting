@@ -1,0 +1,19 @@
+{
+    "name": "de.alpacait.dynamiclighting.editor",
+    "rootNamespace": "AlpacaIT.DynamicLighting.Editor",
+    "references": [
+        "Unity.Mathematics",
+        "de.alpacait.dynamiclighting"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
